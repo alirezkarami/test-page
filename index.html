@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>        آزمون آیین نامه راهنمایی و رانندگی
+</title>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<meta charset="UTF-8">
+<body>
+     <div id="main">
+<header class="top-bar">
+<h1>
+     آزمون آیین نامه راهنمایی و رانندگی
+</h1>
+   <p id="timer">20m 00s</p>
+</header>
+
+<div>
+<div style="width:100%;" class="data">
+
+  <div style="width: 50%;">
+     <div style="position: absolute;    right: 325px;" class="d_data">  <h3>تعدا سوالات :30</h3></div>
+      </div> 
+      
+      <div  style="width: 50%;">
+    <div style="position: absolute;    left: 325px;"  class="d_data" ><h3> زمان آزمون : 20 دقیقه</h3></div>
+
+      </div>            
+</div>
+</div>
+<div style="text-align: center;">
+<div class="btn-start" id="btn"  ><button  onclick="start(1)"><a href="#">همین الان شروع کن</a></button></div>
+</div>
+
+
+<div class="questions" id="start">
+  <form>
+  <h4>
+          1)مسافت توقف در چه جاده هایی افزایش خواهد یافت؟
+</h4>
+          <label id="131" for=""> <input type="radio" name="1" value="1"  onclick="check(this.value,this.name)" >1-جاده آغشته به قیر</label><br>     
+          <label for=""> <input type="radio" name="1" value="2"  onclick="check(this.value,this.name)" >2-جاده ای که شن و ماسه در سطح آسفالت وجود داشته باشد</label><br>
+          <label for=""> <input type="radio" name="1" value="3"  onclick="check(this.value,this.name)" >3-شرایط آب و هوایی بد</label><br>
+          <label for=""> <input type="radio" name="1" value="true"  onclick="check(this.value,this.name)" >4-تمامی موارد </label><br>
+
+          <h4>
+2)خستگی در رانندگی چه علائمی دارد؟               </h4>
+               <label for=""> <input type="radio" name="2" value="1"  onclick="check(this.value,this.name)" >1- کم شدن توجه به رانندگی</label><br>     
+               <label for=""> <input type="radio" name="2" value="2"  onclick="check(this.value,this.name)" >2- عدم درک مناسب از موقعیت و شرایط موجود</label><br>
+               <label for=""> <input type="radio" name="2" value="3"  onclick="check(this.value,this.name)" >3- کاهش سرعت تصمیم گیری</label><br>
+               <label for=""> <input type="radio" name="2" value="true"  onclick="check(this.value,this.name)">4- تمام موارد </label><br>
+               <h4>
+3)حق تقدم در میدانی که علامت و چراغ ندارد چگونه است ؟                    </h4>
+                    <label for=""> <input type="radio" name="3" value="1"  onclick="check(this.value,this.name)" > 1-حق تقدم با وسیله است که به میدان وارد میشود</label><br>     
+                    <label for=""> <input type="radio" name="3" value="true"  onclick="check(this.value,this.name)" >2-حق تقدم با وسیله ای است که درون میدان در حال حرکت است   </label><br>
+                    <label for=""> <input type="radio" name="3" value="3"  onclick="check(this.value,this.name)" >3-حق تقدم با وسیله ای است که سمت راست آن باشد</label><br>
+                    <label for=""> <input type="radio" name="3" value="4"  onclick="check(this.value,this.name)" >4-وسیله ای که مستقیم حرکت میکند </label><br>
+
+                    <h4>
+4)چه عاملی باعث افزایش مسیر توقف شده و احتمال بروز حادثه و تصادف را بالا میبرد؟     
+                  </h4>
+                         <label for=""> <input type="radio" name="4" value="1"  onclick="check(this.value,this.name)" >1-عدم دقت در رانندگی</label><br>     
+                         <label for=""> <input type="radio" name="4" value="2"  onclick="check(this.value,this.name)" >2-گوش دادن به موسیقی</label><br>
+                         <label for=""> <input type="radio" name="4" value="true"  onclick="check(this.value,this.name)" > 3-خرابی و نقص ترمز  </label><br>
+                         <label for=""> <input type="radio" name="4" value="4"  onclick="check(this.value,this.name)" >4-حرکت با دنده خلاص </label><br>
+
+                         <h4>
+5)اگر هنگام ترمز کردن ماشین به یک طرف کشیده شود مشکل از کجاست؟                              </h4>
+                              <label for=""> <input type="radio" name="5" value="true"  onclick="check(this.value,this.name)" >1-ترمزها به خوبی تنظیم نشده است    </label><br>     
+                              <label for=""> <input type="radio" name="5" value="2"  onclick="check(this.value,this.name)" > 2-فرمان ماشین تنظیم نیست</label><br>
+                              <label for=""> <input type="radio" name="5" value="3"  onclick="check(this.value,this.name)" > 3-لاستیک ساییده شده است</label><br>
+                              <label for=""> <input type="radio" name="5" value="4"  onclick="check(this.value,this.name)" > 4-روغن ترمز کم شده است </label><br>
+
+
+
+         
+                              <h4>
+      6)در کدامیک از موقعیت های زیر وزش باد شدید میتواند بر مسیر شما تاثیر بگذارد؟                             
+                   </h4>
+                                     <label for=""> <input type="radio" name="6" value="true"  onclick="check(this.value,this.name)"> 1- بعد از سبقت گرفتن از وسیله نقلیه بزرگ،در مسیرهای باز و بدون درخت و موانع طبیعی    </label><br>     
+                               <label for=""> <input type="radio" name="6" value="2"  onclick="check(this.value,this.name)" > 2- در شهرها</label><br>
+                                 <label for=""> <input type="radio" name="6" value="3"  onclick="check(this.value,this.name)" >3- در تونل ها</label><br>
+                             <label for=""> <input type="radio" name="6" value="4"  onclick="check(this.value,this.name)" >4- در جاده ها </label><br>          
+                             
+                             
+
+                             <h4>
+     7)رانندگی خطرساز و تهاجمی چیست؟
+                            </h4>
+                                <label  for="" > <input type="radio" name="7" value="1"  onclick="check(this.value,this.name)" >1- حرکت با سرعت زیاد</label><br>     
+                          <label for=""> <input type="radio" name="7" value="2"  onclick="check(this.value,this.name)" >2- حرکت مارپیچ</label><br>
+                            <label for=""> <input type="radio" name="7" value="true"  onclick="check(this.value,this.name)" >3- مجموعه رفتارهای منفی در رانندگی    </label><br>
+                        <label for=""> <input type="radio" name="7" value="4"  onclick="check(this.value,this.name)" >4- سبقت های ممنوع پی در پی </label><br>          
+                        
+                        
+                        <h4>
+8)زیاد بودن باد تایر باعث چه میشود؟           
+            </h4>
+                           <label for=""> <input type="radio" name="8" value="true"  onclick="check(this.value,this.name)" >1-فرمان پذیری خودرو را کاهش میدهد و باعث ایجاد خطر میشود  </label><br>     
+                     <label for=""> <input type="radio" name="8" value="2"  onclick="check(this.value,this.name)" > 2-فرمان پذیری خودرو را افزایش میدهد</label><br>
+                       <label for=""> <input type="radio" name="8" value="3"  onclick="check(this.value,this.name)" >3-کاهش مصرف سوخت </label><br>
+                   <label for=""> <input type="radio" name="8" value="4"  onclick="check(this.value,this.name)" >4-کاهش مصرف سوخت </label><br>          
+
+                   <h4>
+9)در زمان ترمز گیری چه عاملی را باید مد نظر قرار داد ؟
+               </h4>
+                      <label for=""> <input type="radio" name="9"  value="1"  onclick="check(this.value,this.name)">  1-اندازه خودرو</label><br>     
+                <label for=""> <input type="radio" name="9"  value="2"  onclick="check(this.value,this.name)" >2-وزن و بار خودرو</label><br>
+                  <label for=""> <input type="radio" name="9"  value="3"  onclick="check(this.value,this.name)">3-شرایط جاده و تایرها</label><br>
+              <label for=""> <input type="radio" name="9"  value="true"  onclick="check(this.value,this.name)"> 4-هر سه مورد </label><br>          
+
+
+              <h4>
+10)چرا در شرایط غیر عادی مانند برف و باران باید از دنده سنگین استفاده کرد؟
+             </h4>
+                 <label for=""> <input type="radio" name="10"  value="1"  onclick="check(this.value,this.name)">1- راحت تر ترمز کرد</label><br>     
+           <label for=""> <input type="radio" name="10"  value="2"  onclick="check(this.value,this.name)">2-تا در صورت لغزش بتوانیم دنده عوض کنیم</label><br>
+             <label for=""> <input type="radio" name="10"  value="true"  onclick="check(this.value,this.name)">3- جهت جلوگیری از لغزش چرخها   </label><br>
+         <label for=""> <input type="radio" name="10"  value="4"  onclick="check(this.value,this.name)">4- هر سه مورد</label><br>          
+
+
+         <h4>
+11)توقف در چه سطوحی نیازمند طی زمان و مسافت بیشتری میباشد؟
+        </h4>
+            <label for=""> <input type="radio" name="11"  value="1"  onclick="check(this.value,this.name)"> 1-لغزنده</label><br>     
+      <label for=""> <input type="radio" name="11"  value="2"  onclick="check(this.value,this.name)">2-سرازیری</label><br>
+        <label for=""> <input type="radio" name="11"  value="3"  onclick="check(this.value,this.name)">3-سربالایی</label><br>
+    <label for=""> <input type="radio" name="11"  value="true"  onclick="check(this.value,this.name)">4-موارد 1و2 </label><br>          
+
+
+    <h4>
+12)کم بودن باد تایر باعث چه میشود؟
+   </h4>
+       <label for=""> <input type="radio" name="12"  value="1"  onclick="check(this.value,this.name)">1-فرسایش تایر ها</label><br>     
+ <label for=""> <input type="radio" name="12"  value="2"  onclick="check(this.value,this.name)">2-افزایش مصرف سوخت</label><br>
+   <label for=""> <input type="radio" name="12"  value="3"  onclick="check(this.value,this.name)">3-از دست رفتن تعادل ،هدایت پذیری و فرمان پذیری</label><br>
+<label for=""> <input type="radio" name="12"  value="true"  onclick="check(this.value,this.name)">4-تمام موارد </label><br>          
+
+
+<h4>
+13)زمانی که سعی دارید اتومبیل را برروی سراشیبی پارک کنید،چه اقدامی باید انجام دهید؟
+   </h4>
+       <label for=""> <input type="radio" name="13"  value="1"  onclick="check(this.value,this.name)">1-نزدیک به سپر اتومبیل جلویی پارک کنید - ترمز دستی را بکشید - در دنده جلو قرار دهید.</label><br>     
+ <label for=""> <input type="radio" name="13"  value="true"  onclick="check(this.value,this.name)">2-چرخها را به سمت جدول چرخانده ترمز دستی را کشیده و در دنده عقب قرار دهید  </label><br>
+   <label for=""> <input type="radio" name="13"  value="3"  onclick="check(this.value,this.name)">3-ترمز دستی را بکشید و با فاصله از جدول بایستید</label><br>
+<label for=""> <input type="radio" name="13"  value="4"  onclick="check(this.value,this.name)">4-اتوموبیل را در دنده قرار دهید </label><br>          
+
+<h4>
+14)در شرایط هوایی بسیار گرم سطح جاده نرم است کدامیک از موارد زیر تحت تاثیر نرمی جاده قرار میگیرند؟
+   </h4>
+       <label for=""> <input type="radio" name="14"  value="1"  onclick="check(this.value,this.name)">1-فقط خارج از شهر مجاز است</label><br>     
+ <label for=""> <input type="radio" name="14"  value="2"  onclick="check(this.value,this.name)">2- ممنوع است  </label><br>
+   <label for=""> <input type="radio" name="14"  value="3"  onclick="check(this.value,this.name)">3- فقط داخل شهر مجاز است</label><br>
+<label for=""> <input type="radio" name="14"  value="true"  onclick="check(this.value,this.name)">4-بلامانع است </label><br>          
+
+
+<h4>
+15)رانندگی با وسیله نقلیه ای که برگ معاینه فنی معتبر نداشته باشد؟
+  </h4>
+       <label for=""> <input type="radio" name="15"  value="1"  onclick="check(this.value,this.name)">1-فقط خارج از شهر مجاز است </label><br>     
+ <label for=""> <input type="radio" name="15"  value="true"  onclick="check(this.value,this.name)">2-فقط خارج از شهر مجاز است  </label><br>
+   <label for=""> <input type="radio" name="15"  value="3"  onclick="check(this.value,this.name)">3-فقط داخل شهر مجاز است</label><br>
+<label for=""> <input type="radio" name="15"  value="4"  onclick="check(this.value,this.name)">4-بلامانع است </label><br>          
+
+
+
+<h4>
+16)در آزاد راهی لاستیک شما پنچر میشود چه میکنید؟
+   </h4>
+       <label for=""> <input type="radio" name="16"  value="true"  onclick="check(this.value,this.name)"> 1-در خط توقف اضطراری توقف میکنید   ml</label><br>     
+ <label for=""> <input type="radio" name="16"  value="2"  onclick="check(this.value,this.name)">2-در خط عبور توقف کرده و شروع به تعویض لاستیک میکنید</label><br>
+   <label for=""> <input type="radio" name="16"  value="3"  onclick="check(this.value,this.name)">3-در همان جا توقف کرده و تابلوی هشدار نصب کنید</label><br>
+<label for=""> <input type="radio" name="16"  value="4"  onclick="check(this.value,this.name)"> 4-چراغ اضطرار را روشن کرده و همان جا شروع به تعویض لاستیک میکنید</label><br>          
+
+
+
+
+<h4>
+ 17)درهنگام عبور از خط راه آهن وقتی صدای قطار را میشنوید و اتوموبیل گیر کرده باید چه کرد؟
+   </h4>
+       <label for=""> <input type="radio" name="17"  value="1"  onclick="check(this.value,this.name)">1-سریع اتومبیل را روشن کرده و حرکت کنید</label><br>     
+ <label for=""> <input type="radio" name="17"  value="2"  onclick="check(this.value,this.name)">2-سریع اتومبیل را هل داده و از خط خارح کنید</label><br>
+   <label for=""> <input type="radio" name="17"  value="true"  onclick="check(this.value,this.name)">3-سریع محل را ترک کنید  </label><br>
+<label for=""> <input type="radio" name="17"  value="4"  onclick="check(this.value,this.name)">4-سریع به قطار علامت دهید</label><br>          
+
+
+
+<h4>
+18)در طول عبور از خط راه آهن نباید
+   </h4>
+       <label for=""> <input type="radio" name="18"  value="1"  onclick="check(this.value,this.name)">1-دنده عوض کرد</label><br>     
+ <label for=""> <input type="radio" name="18"  value="2"  onclick="check(this.value,this.name)">2-نباید ایست گرفت</label><br>
+   <label for=""> <input type="radio" name="18"  value="3"  onclick="check(this.value,this.name)">3-ترمز گرفت</label><br>
+<label for=""> <input type="radio" name="18"  value="true"  onclick="check(this.value,this.name)">4-تمام موارد </label><br>          
+
+
+
+
+<h4>
+19)معنی و مفهوم استفاده از نور بالا چیست؟
+   </h4>
+       <label for=""> <input type="radio" name="19"  value="1"  onclick="check(this.value,this.name)">1-جهت اینکه حق تقدم با شماست.</label><br>     
+ <label for=""> <input type="radio" name="19"  value="2"  onclick="check(this.value,this.name)">2-جهت اعلام اینکه به آنها راه داده اید.</label><br>
+   <label for=""> <input type="radio" name="19"  value="true"  onclick="check(this.value,this.name)">3-جهت اعلام حضور به آنها  </label><br>
+<label for=""> <input type="radio" name="19"    value="4"  onclick="check(this.value,this.name)">4-جهت اعلام بسته بودن مسیر</label><br>          
+
+
+
+
+
+<h4>
+20)سبقت در محور خط ممتد
+   </h4>
+       <label for=""> <input type="radio" name="20"  value="1"  onclick="check(this.value,this.name)">1-ممنوع است</label><br>     
+ <label for=""> <input type="radio" name="20"  value="2"  onclick="check(this.value,this.name)">2-مجاز است</label><br>
+   <label for=""> <input type="radio" name="20"  value="true"  onclick="check(this.value,this.name)">3-در زمان سبقت با رعایت ضوابط سبقت،مجاز است  </label><br>
+<label for=""> <input type="radio" name="20"  value="4"  onclick="check(this.value,this.name)">4-در سورت خلوت بودن مسیر ایرادی ندارد</label><br>          
+
+
+
+
+<h4>
+  21)در پشت تقاطع جاده و راه آهن راننده چه هنگام مجاز به عبور است؟
+   </h4>
+       <label for=""> <input type="radio" name="21"  value="1"  onclick="check(this.value,this.name)">1- هنگامی که قطار عبور میکند</label><br>     
+ <label for=""> <input type="radio" name="21"  value="2"  onclick="check(this.value,this.name)">2- زمانی که چراغ محل همچنان روشن بماند</label><br>
+   <label for=""> <input type="radio" name="21"  value="true"  onclick="check(this.value,this.name)"> 3- هنگامی که چراغ محل تقاطع خاموش میشود  </label><br>
+<label for=""> <input type="radio" name="21"  value="4"  onclick="check(this.value,this.name)">4- موارد 1 و 2 خاموش میشود</label><br>          
+
+
+
+
+<h4>
+  22)چرا در شرایط غیر عادی مانند برف و باران باید از دنده سنگین استفاده کرد؟
+   </h4>
+       <label for=""> <input type="radio" name="22"  value="1"  onclick="check(this.value,this.name)">1-راحت تر ترمز کرد</label><br>     
+ <label for=""> <input type="radio" name="22"  value="true"  onclick="check(this.value,this.name)"> 2-جهت جلوگیری از لغزش چرخها </label><br>
+   <label for=""> <input type="radio" name="22"  value="3"  onclick="check(this.value,this.name)">3- در صورت لغزش بتوانیم دنده عوض کنیم</label><br>
+<label for=""> <input type="radio" name="22"  value="4"  onclick="check(this.value,this.name)">4-تمام موارد</label><br>          
+
+
+
+
+<h4>
+     23)اگر در هنگام ترمز کردن ماشین به یک طرف کشیده شود مشکل از کجاست ؟
+   </h4>
+       <label for=""> <input type="radio" name="23"  value="true"  onclick="check(this.value,this.name)">1- ترمز ها به خوبی تنظیم نشده است    </label><br>     
+ <label for=""> <input type="radio" name="23"  value="2"  onclick="check(this.value,this.name)">2-لاستیک ساییده شده است</label><br>
+   <label for=""> <input type="radio" name="23"  value="3"  onclick="check(this.value,this.name)">3-روغن ترمز کم شده است</label><br>
+<label for=""> <input type="radio" name="23"  value="4"  onclick="check(this.value,this.name)">4-روغن ترمز کم شده است </label><br>          
+
+
+
+
+<h4>
+  24)کدامیک جان راننده را به خطر میندازد؟
+   </h4>
+       <label for=""> <input type="radio" name="24"  value="1"  onclick="check(this.value,this.name)">1-فقدان تنفسی     </label><br>     
+ <label for=""> <input type="radio" name="24"  value="2"  onclick="check(this.value,this.name)">2-خونریزی شدید </label><br>
+   <label for=""> <input type="radio" name="24"  value="3"  onclick="check(this.value,this.name)">3-حالت بیهوشی</label><br>
+<label for=""> <input type="radio" name="24"  value="true"  onclick="check(this.value,this.name)">4-تمام موارد </label><br>          
+
+
+
+<h4>
+25)مهم ترین عضو در رانندگی چیست؟
+   </h4>
+       <label for=""> <input type="radio" name="25"  value="1"  onclick="check(this.value,this.name)">1-پاها</label><br>     
+ <label for=""> <input type="radio" name="25"  value="true"  onclick="check(this.value,this.name)">2-چشم ها   </label><br>
+   <label for=""> <input type="radio" name="25"  value="3"  onclick="check(this.value,this.name)">3-دست ها</label><br>
+<label for=""> <input type="radio" name="25"  value="4"  onclick="check(this.value,this.name)">4-تمام موارد</label><br>          
+
+
+
+<h4>
+  26)در زمان ترمز گیری چه عاملی را بیاد مدنظر قرار داد؟
+   </h4>
+       <label for=""> <input type="radio" name="26"  value="1"  onclick="check(this.value,this.name)">1-اندازه خودرو</label><br>     
+ <label for=""> <input type="radio" name="26"  value="2"  onclick="check(this.value,this.name)">2-وزن و بار خودرو</label><br>
+   <label for=""> <input type="radio" name="26"  value="3"  onclick="check(this.value,this.name)">3-شرایط جاده و تایر ها</label><br>
+<label for=""> <input type="radio" name="26"  value="true"  onclick="check(this.value,this.name)">4-تمام موارد </label><br>          
+
+
+<h4>
+ 27)در تقاطع در صورت نداشتن خط ایست در چه فاصله ای از چراغ راهنمایی توقف میکنیم؟
+   </h4>
+       <label for=""> <input type="radio" name="27"  value="1"  onclick="check(this.value,this.name)">1- 7متری</label><br>     
+ <label for=""> <input type="radio" name="27"  value="true"  onclick="check(this.value,this.name)"> 2-وجود پشتی مناسب سر و تنظیم کننده  </label><br>
+   <label for=""> <input type="radio" name="27"  value="3"  onclick="check(this.value,this.name)">3-کیسه هوا</label><br>
+<label for=""> <input type="radio" name="27"  value="4"  onclick="check(this.value,this.name)">4-صندلی مجهز به بالشتک هوا</label><br>          
+
+
+
+<h4>
+  28)در ازاد راه زمانی که اشتباها از محل خروجی مورد نظر خود رد میشوید….
+   </h4>
+       <label for=""> <input type="radio" name="28"  value="1"  onclick="check(this.value,this.name)"> 1-با دقت دنده عقب رفته و از باند سمت چپ به عقب برگردید</label><br>     
+ <label for=""> <input type="radio" name="28"  value="true"  onclick="check(this.value,this.name)"> 2-تا خروجی بعدی به راه خود ادامه دهید  </label><br>
+   <label for=""> <input type="radio" name="28"  value="3"  onclick="check(this.value,this.name)">3-در محل اولین بریدگی وسط آزاد راه دور بزنید</label><br>
+<label for=""> <input type="radio" name="28"  value="4"  onclick="check(this.value,this.name)">4-هیچکدام</label><br>          
+
+
+<h4>
+29)چه عاملی میتواند میزان خطر ناشی از آسیب دیدگی را گردن در مواقع تصادف کم کند؟
+   </h4>
+       <label for=""> <input type="radio" name="29"  value="1"  onclick="check(this.value,this.name)">1-ترمز ضد قفل</label><br>     
+ <label for=""> <input type="radio" name="29"  value="true"  onclick="check(this.value,this.name)"> 2-وجود پشتی مناسب سر و تنظیم کننده </label><br>
+   <label for=""> <input type="radio" name="29"  value="3"  onclick="check(this.value,this.name)">3-کیسه هوا</label><br>
+<label for=""> <input type="radio" name="29"  value="4"  onclick="check(this.value,this.name)">4-صندلی مجهز به بالشتک هوا</label><br>          
+
+
+<h4>
+30)در شرایط هوایی بسیار گرم سطح جاده نرم است کدامیک از موارد زیر تحت تاثیر نرمی جاده قرار میگیرند؟
+   </h4>
+       <label for=""> <input type="radio" name="30"  value="1"  onclick="check(this.value,this.name)">1-تعویض دنده</label><br>     
+ <label for=""> <input type="radio" name="30"  value="2"  onclick="check(this.value,this.name)">2-میزان باد تایر</label><br>
+   <label for=""> <input type="radio" name="30"  value="3"  onclick="check(this.value,this.name)">3-کلاچ سفت میشود</label><br>
+<label for=""> <input type="radio" name="30"  value="true"  onclick="check(this.value,this.name)">4-هدایت و گردش اتومبیل و ترمز کردن </label><br>          
+
+</form>
+
+
+
+ <button id="end" onclick="start(2)">اتمام آزمون</button> 
+</div>
+
+
+
+
+
+
+
+<div class="questions" id="hidden" >
+  <form>
+  <h5 >
+          1)مسافت توقف در چه جاده هایی افزایش خواهد یافت؟
+</h5> <ul>
+          <label for=""> <p id="1"  class="1"  > 1-جاده آغشته به قیر </p></label><br>     
+          <label  for=""> <p id="2" class="2"  > 2-جاده ای که شن و ماسه در سطح آسفالت وجود داشته باشد </p></label><br>
+          <label for=""> <p id="3" class="3"  > 3-شرایط آب و هوایی بد </p></label><br>
+          <label for=""> <p id="4" class="true"  > 4-تمامی موارد  </p></label><br>
+
+         </ul><p id="1000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+2)خستگی در رانندگی چه علائمی دارد؟               </h5> <ul>
+               <label for=""> <p id="5" class="1"  > 1- کم شدن توجه به رانندگی </p></label><br>     
+               <label for=""> <p id="6" class="2"  > 2- عدم درک مناسب از موقعیت و شرایط موجود </p></label><br>
+               <label for=""> <p id="7" class="3"  > 3- کاهش سرعت تصمیم گیری </p></label><br>
+               <label for=""> <p id="8" class="true"  >    4- تمام موارد  </p></label><br>
+              </ul><p id="2000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+3)حق تقدم در میدانی که علامت و چراغ ندارد چگونه است ؟                    </h5> <ul>
+                    <label for=""> <p id="9" class="1"  >  1-حق تقدم با وسیله است که به میدان وارد میشود </p></label><br>     
+                    <label for=""> <p id="10" class="true"  > 2-حق تقدم با وسیله ای است که درون میدان در حال حرکت است    </p></label><br>
+                    <label for=""> <p id="11" class="3"  > 3-حق تقدم با وسیله ای است که سمت راست آن باشد </p></label><br>
+                    <label for=""> <p id="12" class="4"  > 4-وسیله ای که مستقیم حرکت میکند  </p></label><br>
+
+                   </ul><p id="3000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+4)چه عاملی باعث افزایش مسیر توقف شده و احتمال بروز حادثه و تصادف را بالا میبرد؟     
+                  </h5> <ul>
+                         <label for=""> <p id="13" class="1"  > 1-عدم دقت در رانندگی </p></label><br>     
+                         <label for=""> <p id="14" class="2"  > 2-گوش دادن به موسیقی </p></label><br>
+                         <label for=""> <p id="15" class="true"  >  3-خرابی و نقص ترمز   </p></label><br>
+                         <label for=""> <p id="16" class="4"  > 4-حرکت با دنده خلاص  </p></label><br>
+
+                        </ul><p id="4000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+5)اگر هنگام ترمز کردن ماشین به یک طرف کشیده شود مشکل از کجاست؟                              </h5> <ul>
+                              <label for=""> <p id="17" class="true"  > 1-ترمزها به خوبی تنظیم نشده است     </p></label><br>     
+                              <label for=""> <p id="18" class="2"  >  2-فرمان ماشین تنظیم نیست </p></label><br>
+                              <label for=""> <p id="19" class="3"  >  3-لاستیک ساییده شده است </p></label><br>
+                              <label for=""> <p id="20" class="4"  >  4-روغن ترمز کم شده است  </p></label><br>
+
+
+
+         
+                             </ul><p id="5000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+      6)در کدامیک از موقعیت های زیر وزش باد شدید میتواند بر مسیر شما تاثیر بگذارد؟                             
+                   </h5> <ul>
+                                     <label for=""> <p id="21" class="true"> 1- بعد از سبقت گرفتن از وسیله نقلیه بزرگ،در مسیرهای باز و بدون درخت و موانع طبیعی     </p></label><br>     
+                               <label for=""> <p id="22" class="2"  >  2- در شهرها </p></label><br>
+                                 <label for=""> <p id="23" class="3"  > 3- در تونل ها </p></label><br>
+                             <label for=""> <p id="24" class="4"  > 4- در جاده ها  </p></label><br>          
+                             
+                             
+
+                            </ul><p id="6000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+     7)رانندگی خطرساز و تهاجمی چیست؟
+                            </h5> <ul>
+                                <label for=""> <p id="25" class="1"  > 1- حرکت با سرعت زیاد </p></label><br>     
+                          <label for=""> <p id="26" class="2"  > 2- حرکت مارپیچ </p></label><br>
+                            <label for=""> <p id="27" class="true"  > 3- مجموعه رفتارهای منفی در رانندگی     </p></label><br>
+                        <label for=""> <p id="28" class="4"  > 4- سبقت های ممنوع پی در پی  </p></label><br>          
+                        
+                        
+                       </ul><p id="7000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+8)زیاد بودن باد تایر باعث چه میشود؟           
+            </h5> <ul>
+                           <label for=""> <p id="29" class="true"  > 1-فرمان پذیری خودرو را کاهش میدهد و باعث ایجاد خطر میشود   </p></label><br>     
+                     <label for=""> <p id="30" class="2"  >  2-فرمان پذیری خودرو را افزایش میدهد </p></label><br>
+                       <label for=""> <p id="31" class="3"  > 3-کاهش مصرف سوخت  </p></label><br>
+                   <label for=""> <p id="32" class="4"  > 4-کاهش مصرف سوخت  </p></label><br>          
+
+                  </ul><p id="8000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+9)در زمان ترمز گیری چه عاملی را باید مد نظر قرار داد ؟
+               </h5> <ul>
+                      <label for=""> <p id="33"  class="1">  1-اندازه خودرو </p></label><br>     
+                <label for=""> <p id="34"  class="2"  > 2-وزن و بار خودرو </p></label><br>
+                  <label for=""> <p id="35"  class="3">3-شرایط جاده و تایرها </p></label><br>
+              <label for=""> <p id="36"  class="true"> 4-هر سه مورد  </p></label><br>          
+
+
+             </ul><p id="9000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+10)چرا در شرایط غیر عادی مانند برف و باران باید از دنده سنگین استفاده کرد؟
+             </h5> <ul>
+                 <label for=""> <p id="37"  class="1">1- راحت تر ترمز کرد </p></label><br>     
+           <label for=""> <p id="38"  class="2">2-تا در صورت لغزش بتوانیم دنده عوض کنیم </p></label><br>
+             <label for=""> <p id="39"  class="true">3- جهت جلوگیری از لغزش چرخها    </p></label><br>
+         <label for=""> <p id="40"  class="4">4- هر سه مورد </p></label><br>          
+
+
+        </ul><p id="10000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+11)توقف در چه سطوحی نیازمند طی زمان و مسافت بیشتری میباشد؟
+        </h5> <ul>
+            <label for=""> <p id="41"  class="1"> 1-لغزنده </p></label><br>     
+      <label for=""> <p id="42"  class="2">2-سرازیری </p></label><br>
+        <label for=""> <p id="43"  class="3">3-سربالایی </p></label><br>
+    <label for=""> <p id="44"  class="true">4-موارد 1و2  </p></label><br>          
+
+
+   </ul><p id="11000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+12)کم بودن باد تایر باعث چه میشود؟
+   </h5> <ul>
+       <label for=""> <p id="45"  class="1">1-فرسایش تایر ها </p></label><br>     
+ <label for=""> <p id="46"  class="2">2-افزایش مصرف سوخت </p></label><br>
+   <label for=""> <p id="47"  class="3">3-از دست رفتن تعادل ،هدایت پذیری و فرمان پذیری </p></label><br>
+<label for=""> <p id="48"  class="true">4-تمام موارد  </p></label><br>          
+
+
+</ul><p id="12000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+13)زمانی که سعی دارید اتومبیل را برروی سراشیبی پارک کنید،چه اقدامی باید انجام دهید؟
+   </h5> <ul>
+       <label for=""> <p id="49"  class="1">1-نزدیک به سپر اتومبیل جلویی پارک کنید - ترمز دستی را بکشید - در دنده جلو قرار دهید. </p></label><br>     
+ <label for=""> <p id="50"  class="true">2-چرخها را به سمت جدول چرخانده ترمز دستی را کشیده و در دنده عقب قرار دهید   </p></label><br>
+   <label for=""> <p id="51"  class="3">3-ترمز دستی را بکشید و با فاصله از جدول بایستید </p></label><br>
+<label for=""> <p id="52"  class="4">4-اتوموبیل را در دنده قرار دهید  </p></label><br>          
+
+</ul><p id="13000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+14)در شرایط هوایی بسیار گرم سطح جاده نرم است کدامیک از موارد زیر تحت تاثیر نرمی جاده قرار میگیرند؟
+   </h5> <ul>
+       <label for=""> <p id="53"  class="1">1-فقط خارج از شهر مجاز است </p></label><br>     
+ <label for=""> <p id="54"  class="2">2- ممنوع است   </p></label><br>
+   <label for=""> <p id="55"  class="3">3- فقط داخل شهر مجاز است </p></label><br>
+<label for=""> <p id="56"  class="true">4-بلامانع است  </p></label><br>          
+
+
+</ul><p id="14000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+15)رانندگی با وسیله نقلیه ای که برگ معاینه فنی معتبر نداشته باشد؟
+  </h5> <ul>
+       <label for=""> <p id="57"  class="1">1-فقط خارج از شهر مجاز است  </p></label><br>     
+ <label for=""> <p id="58"  class="true">2-فقط خارج از شهر مجاز است   </p></label><br>
+   <label for=""> <p id="59"  class="3">3-فقط داخل شهر مجاز است </p></label><br>
+<label for=""> <p id="60"  class="4">4-بلامانع است  </p></label><br>          
+
+
+
+</ul><p id="15000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+16)در آزاد راهی لاستیک شما پنچر میشود چه میکنید؟
+   </h5> <ul>
+       <label for=""> <p id="61"  class="true"> 1-در خط توقف اضطراری توقف میکنید   ml </p></label><br>     
+ <label for=""> <p id="62"  class="2">2-در خط عبور توقف کرده و شروع به تعویض لاستیک میکنید </p></label><br>
+   <label for=""> <p id="63"  class="3">3-در همان جا توقف کرده و تابلوی هشدار نصب کنید </p></label><br>
+<label for=""> <p id="64"  class="4"> 4-چراغ اضطرار را روشن کرده و همان جا شروع به تعویض لاستیک میکنید </p></label><br>          
+
+
+
+
+</ul><p id="16000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+ 17)درهنگام عبور از خط راه آهن وقتی صدای قطار را میشنوید و اتوموبیل گیر کرده باید چه کرد؟
+   </h5> <ul>
+       <label for=""> <p id="65"  class="1">1-سریع اتومبیل را روشن کرده و حرکت کنید </p></label><br>     
+ <label for=""> <p id="66"  class="2">2-سریع اتومبیل را هل داده و از خط خارح کنید </p></label><br>
+   <label for=""> <p id="67"  class="true">3-سریع محل را ترک کنید   </p></label><br>
+<label for=""> <p id="68"  class="4">4-سریع به قطار علامت دهید </p></label><br>          
+
+
+
+</ul><p id="17000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+18)در طول عبور از خط راه آهن نباید
+   </h5> <ul>
+       <label for=""> <p id="69"  class="1">1-دنده عوض کرد </p></label><br>     
+ <label for=""> <p id="70"  class="2">2-نباید ایست گرفت </p></label><br>
+   <label for=""> <p id="71"  class="3">3-ترمز گرفت </p></label><br>
+<label for=""> <p id="72"  class="true">4-تمام موارد  </p></label><br>          
+
+
+
+
+</ul><p id="18000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+19)معنی و مفهوم استفاده از نور بالا چیست؟
+   </h5> <ul>
+       <label for=""> <p id="73"  class="1">1-جهت اینکه حق تقدم با شماست. </p></label><br>     
+ <label for=""> <p id="74"  class="2">2-جهت اعلام اینکه به آنها راه داده اید. </p></label><br>
+   <label for=""> <p id="75"  class="true">3-جهت اعلام حضور به آنها   </p></label><br>
+<label for=""> <p id="76"    class="4">4-جهت اعلام بسته بودن مسیر </p></label><br>          
+
+
+
+
+
+</ul><p id="19000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+  20)سبقت در محور خط ممتد
+</h5> <ul>
+       <label for=""> <p id="77"  class="1">1-ممنوع است </p></label><br>     
+ <label for=""> <p id="78"  class="2">2-مجاز است </p></label><br>
+   <label for=""> <p id="79"  class="true">3-در زمان سبقت با رعایت ضوابط سبقت،مجاز است   </p></label><br>
+<label for=""> <p id="80"  class="4">4-در سورت خلوت بودن مسیر ایرادی ندارد </p></label><br>          
+
+
+
+
+</ul><p id="20000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+  21)در پشت تقاطع جاده و راه آهن راننده چه هنگام مجاز به عبور است؟
+   </h5> <ul>
+       <label for=""> <p id="81"  class="1">1- هنگامی که قطار عبور میکند </p></label><br>     
+ <label for=""> <p id="82"  class="2">2- زمانی که چراغ محل همچنان روشن بماند </p></label><br>
+   <label for=""> <p id="83"  class="true"> 3- هنگامی که چراغ محل تقاطع خاموش میشود   </p></label><br>
+<label for=""> <p id="84"  class="4">4- موارد 1 و 2 خاموش میشود </p></label><br>          
+
+
+
+
+</ul><p id="21000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+  22)چرا در شرایط غیر عادی مانند برف و باران باید از دنده سنگین استفاده کرد؟
+   </h5> <ul>
+       <label for=""> <p id="85"  class="1">1-راحت تر ترمز کرد </p></label><br>     
+ <label for=""> <p id="86"  class="true"> 2-جهت جلوگیری از لغزش چرخها  </p></label><br>
+   <label for=""> <p id="87"  class="3">3- در صورت لغزش بتوانیم دنده عوض کنیم </p></label><br>
+<label for=""> <p id="88"  class="4">4-تمام موارد </p></label><br>          
+
+
+
+
+</ul><p id="22000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+     23)اگر در هنگام ترمز کردن ماشین به یک طرف کشیده شود مشکل از کجاست ؟
+   </h5> <ul>
+       <label for=""> <p id="89"  class="true">1- ترمز ها به خوبی تنظیم نشده است     </p></label><br>     
+ <label for=""> <p id="90"  class="2">2-لاستیک ساییده شده است </p></label><br>
+   <label for=""> <p id="91"  class="3">3-روغن ترمز کم شده است </p></label><br>
+<label for=""> <p id="92"  class="4">4-روغن ترمز کم شده است  </p></label><br>          
+
+
+
+
+</ul><p id="23000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+  24)کدامیک جان راننده را به خطر میندازد؟
+   </h5> <ul>
+       <label for=""> <p id="93"  class="1">1-فقدان تنفسی      </p></label><br>     
+ <label for=""> <p id="94"  class="2">2-خونریزی شدید  </p></label><br>
+   <label for=""> <p id="95"  class="3">3-حالت بیهوشی </p></label><br>
+<label for=""> <p id="96"  class="true">4-تمام موارد  </p></label><br>          
+
+
+
+</ul><p id="24000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+25)مهم ترین عضو در رانندگی چیست؟
+   </h5> <ul>
+       <label for=""> <p id="97"  class="1">1-پاها </p></label><br>     
+ <label for=""> <p id="98"  class="true">2-چشم ها    </p></label><br>
+   <label for=""> <p id="99"  class="3">3-دست ها </p></label><br>
+<label for=""> <p id="100"  class="4">4-تمام موارد </p></label><br>          
+
+
+
+</ul><p id="25000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+  26)در زمان ترمز گیری چه عاملی را بیاد مدنظر قرار داد؟
+   </h5> <ul>
+       <label for=""> <p id="101"  class="1">1-اندازه خودرو </p></label><br>     
+ <label for=""> <p id="102"  class="2">2-وزن و بار خودرو </p></label><br>
+   <label for=""> <p id="103"  class="3">3-شرایط جاده و تایر ها </p></label><br>
+<label for=""> <p id="104"  class="true">4-تمام موارد  </p></label><br>          
+
+
+</ul><p id="26000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+ 27)در تقاطع در صورت نداشتن خط ایست در چه فاصله ای از چراغ راهنمایی توقف میکنیم؟
+   </h5> <ul>
+       <label for=""> <p id="105"  class="1">1- 7متری </p></label><br>     
+ <label for=""> <p id="106"  class="true"> 2-وجود پشتی مناسب سر و تنظیم کننده   </p></label><br>
+   <label for=""> <p id="107"  class="3">3-کیسه هوا </p></label><br>
+<label for=""> <p id="108"  class="4">4-صندلی مجهز به بالشتک هوا </p></label><br>          
+
+
+
+</ul><p id="27000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+  28)در ازاد راه زمانی که اشتباها از محل خروجی مورد نظر خود رد میشوید….
+   </h5> <ul>
+       <label for=""> <p id="109"  class="1"> 1-با دقت دنده عقب رفته و از باند سمت چپ به عقب برگردید </p></label><br>     
+ <label for=""> <p id="110"  class="true"> 2-تا خروجی بعدی به راه خود ادامه دهید   </p></label><br>
+   <label for=""> <p id="111"  class="3">3-در محل اولین بریدگی وسط آزاد راه دور بزنید </p></label><br>
+<label for=""> <p id="112"  class="4">4-هیچکدام </p></label><br>          
+
+
+</ul><p id="28000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+29)چه عاملی میتواند میزان خطر ناشی از آسیب دیدگی را گردن در مواقع تصادف کم کند؟
+   </h5> <ul>
+       <label for=""> <p id="113"  class="1">1-ترمز ضد قفل </p></label><br>     
+ <label for=""> <p id="114"  class="true"> 2-وجود پشتی مناسب سر و تنظیم کننده  </p></label><br>
+   <label for=""> <p id="115"  class="3">3-کیسه هوا </p></label><br>
+<label for=""> <p id="116"  class="4">4-صندلی مجهز به بالشتک هوا </p></label><br>          
+
+
+</ul><p id="29000" class="verify" >شما به این سوال پاسخ نداده اید</p> <h5 class="ver">
+30)در شرایط هوایی بسیار گرم سطح جاده نرم است کدامیک از موارد زیر تحت تاثیر نرمی جاده قرار میگیرند؟
+   </h5> <ul>
+       <label for=""> <p id="117"  class="1">1-تعویض دنده </p></label><br>     
+ <label for=""> <p id="118"  class="2">2-میزان باد تایر </p></label><br>
+   <label for=""> <p id="119"  class="3">3-کلاچ سفت میشود </p></label><br>
+<label for=""> <p id="120"  class="true">4-هدایت و گردش اتومبیل و ترمز کردن  </p></label><br>          
+</ul><p id="30000" class="verify" >شما به این سوال پاسخ نداده اید</p>
+</form>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>

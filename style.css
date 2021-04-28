@@ -1,0 +1,170 @@
+
+
+
+body{
+   
+    background-color: #457469;
+   direction: rtl;
+    width: 100%;
+    margin: 0;
+    
+    text-decoration: none;
+}
+
+#main{
+    
+    width: 100%;
+    height: 100%;
+ 
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #79797f;
+width: 80%;
+height: 243px;
+margin: auto;
+    margin-top: auto;
+border-radius: 50%;
+border: 11px double #1615155c;
+margin-top: 13px;
+
+}
+
+.top-bar h1{
+
+    text-align: center;
+    padding: 80px;
+
+}
+
+.data{
+   width: 100%;
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+    
+}
+
+.data div{
+    
+}
+
+.data h3{
+padding: 11px 0;
+font-size: 24px;
+}
+
+button{
+    margin: auto;
+    text-align: center;
+}
+
+.btn-start button {
+    background-color: #c6818194;
+    float: right;
+    border: double 12px #7249491c;
+    border-radius: 60px;    text-align: center;
+    margin:auto ;
+    font-size: 27px;
+    color: #595a5e;
+    width: 360px;
+    height: 123px;
+    padding-block-end: 11px;
+    padding-block-start: -23px;
+    margin-top: 190px;    margin-bottom: 103px;
+}
+
+.btn-start{
+    display: inline-block;
+}
+
+
+
+
+.btn-start :hover{
+    box-shadow: rgb(109, 220, 240);
+}
+
+.questions{
+    margin: auto;
+    width: 75%;
+    background-color: #bad2d2;
+    margin-top: 219px;
+    padding: 20px;
+    border-radius:18px ;
+    text-align: right;
+    margin-bottom: 60px;
+}
+
+#start {
+    display: none;
+}
+#hidden{
+    display: none;
+
+}
+
+#end{
+    width: 30%;
+    height: 50px;
+    margin-top: 80px;
+    margin-right: 35%;
+    font-size: 18px;
+}
+
+.true{
+    width: 100px;
+    padding: 0px 137px;
+    background-color: #5ece67;
+}
+
+label p{
+    text-align: center;
+    margin: auto;
+}
+
+h5{
+    text-align: center;
+    margin: auto;
+}
+
+.dtls{
+    margin: auto;
+}
+
+#timer{
+display: none;    
+border: 7px solid #6c0d244d;
+position: fixed;
+right: 6px;
+padding-inline: 2px;
+padding-block: 10px;
+font-size: 41px;
+border-radius: 10px;
+}
+
+.verify{
+color: rgb(11, 105, 160) ;
+}
+
+.ver{
+    margin-top: 80px;
+}
+
+.d_data{ width: 300px;
+    background: #a1a7d5;
+    float: right;
+    height: 100px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: solid 7px #cdcda8;
+    border-radius: 15px;
+    margin-top: 40px;   
+}
+
+
+
